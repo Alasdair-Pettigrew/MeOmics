@@ -19,7 +19,7 @@ app.get('*', (req, res) => {
 });
 
 
-mongoose.connect('mongodb+srv://project:project@cluster0.kos1k7l.mongodb.net/meomics', {
+mongoose.connect('mongodb+srv://alasdair:alasdair@cluster0.wnfocpg.mongodb.net/meomics', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
