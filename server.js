@@ -12,14 +12,8 @@ app.use(cors());
 app.use(bodyParser.json());
 // Serve static files from the 'Front-end' folder
 
-app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'index.html'));
-});
-
-
-mongoose.connect('mongodb+srv://alasdair:alasdair@cluster0.wnfocpg.mongodb.net/meomics', {
+mongoose.connect('mongodb+srv://alasdair:alasdair@cluster0.wnfocpg.mongodb.net/eddyline', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
