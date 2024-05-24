@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 // Serve static files from the 'Front-end' folder
 
 
-mongoose.connect('mongodb+srv://alasdair:alasdair@cluster0.wnfocpg.mongodb.net/eddyline', {
-    useNewUrlParser: true,
+mongoose.connect('mongodb+srv://alasdair:alasdair@cluster0.wnfocpg.mongodb.net/meomics', {
+    useNewUrlParser: true
     useUnifiedTopology: true,
 });
 
