@@ -117,6 +117,66 @@ h1 {
   /* Add spacing between form elements */
 }
 
+/* Spinning Dots Animation */
+.loader-dots {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: auto; /* Center the loader */
+}
+.loader-dots div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #000; /* Black color */
+  animation: loader-dots 1.2s linear infinite;
+}
+.loader-dots div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.loader-dots div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.loader-dots div:nth-child(3) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.loader-dots div:nth-child(4) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+@keyframes loader-dots {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+/* Style to center the loader */
+#loadingAnimation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+}
+
 .container10 {
   width: 50%;
   height: 20vh;
