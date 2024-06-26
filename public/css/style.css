@@ -119,11 +119,12 @@ img {
 }
 
 .container1 {
-  width: 23vw;
+  width: 26vw;
   height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
   margin-bottom: 30px;
 }
 
