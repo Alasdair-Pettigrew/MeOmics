@@ -3,17 +3,21 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-style: normal;
   margin: 0;
 }
 
+img.link-icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .background {
   display: flex;
   justify-content: space-evenly;
-
   align-items: center;
   padding: 20px;
   width: 95vw;
@@ -21,12 +25,14 @@ body {
   font-weight: 600;
   margin-top: 50px;
 }
+
 header {
   width: 100vw;
   background-image: url("/public/background\ image.svg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -68,6 +74,7 @@ header {
 div.btn {
   width: 100vw;
   justify-content: center;
+  margin-bottom: 40px;
 }
 
 button.btn1 {
@@ -78,6 +85,11 @@ button.btn1 {
   border: 1px solid #ffffff;
   font-size: 14pt;
   padding: 5px 50px !important;
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+button.btn1:hover {
+  cursor: pointer; /* Ensure cursor changes to pointer on hover */
 }
 
 .unlocking-the-future-container {
@@ -87,11 +99,6 @@ button.btn1 {
   flex-direction: row;
   font-weight: 600;
   justify-content: center;
-}
-
-img {
-  width: 50px;
-  height: 50px;
 }
 
 .image-icon {
@@ -185,6 +192,7 @@ img {
   padding: 5px 10px;
   text-decoration: none;
 }
+
 .latest-news p a {
   color: white; /* Custom color for the link */
 }
@@ -406,6 +414,7 @@ img {
     padding: 10px 0;
     font-size: 12px;
   }
+
   .footer div {
     margin: 0 5px;
   }
