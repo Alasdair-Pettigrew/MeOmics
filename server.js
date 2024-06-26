@@ -2,9 +2,11 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const express = require('express');
+const dotenv=require('dotenv');
 
 const cors = require('cors'); 
 // ...
+dotenv.config();
 
 const app = express();
 app.use(cors());
@@ -13,9 +15,9 @@ app.use(bodyParser.json());
 // Serve static files from the 'Front-end' folder
 
 
-mongoose.connect('mongodb+srv://alasdair:alasdair@cluster0.wnfocpg.mongodb.net/meomics', {
+mongoose.connect(process.env.api_key, {
     useNewUrlParser: true
-    useUnifiedTopology: true,
+  
 });
 
 const contactSchema = new mongoose.Schema ({
